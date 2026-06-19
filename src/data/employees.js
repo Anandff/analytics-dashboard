@@ -1,26 +1,69 @@
-export const employees = [
-  {
-    id: 1,
-    name: "John",
-    department: "Sales",
-    revenue: 5000,
-  },
-  {
-    id: 2,
-    name: "Mike",
-    department: "Marketing",
-    revenue: 3000,
-  },
-  {
-    id: 3,
-    name: "Sarah",
-    department: "Finance",
-    revenue: 7000,
-  },
-  {
-    id: 4,
-    name: "Emma",
-    department: "Sales",
-    revenue: 4500,
-  },
+const firstNames = [
+  "Aarav",
+  "Vivaan",
+  "Aditya",
+  "Krishna",
+  "Arjun",
+  "Rahul",
+  "Ananya",
+  "Priya",
+  "Sneha",
+  "Neha",
+  "Riya",
+  "Simran",
+  "Karan",
+  "Rohit",
+  "Amit",
+  "Pooja",
+  "Kavya",
+  "Ishita",
+  "Varun",
+  "Nikhil",
 ];
+
+const lastNames = [
+  "Sharma",
+  "Singh",
+  "Kumar",
+  "Patel",
+  "Verma",
+  "Gupta",
+  "Yadav",
+  "Mishra",
+  "Jain",
+  "Kapoor",
+  "Agarwal",
+  "Saxena",
+];
+
+const departments = [
+  "Sales",
+  "Marketing",
+  "Finance",
+  "HR",
+  "IT",
+  "Operations",
+];
+
+function randomItem(array) {
+  return array[
+    Math.floor(Math.random() * array.length)
+  ];
+}
+
+export const employees = Array.from(
+  { length: 200 },
+  (_, index) => ({
+    id: index + 1,
+
+    name: `${randomItem(firstNames)} ${randomItem(
+      lastNames
+    )}`,
+
+    department: randomItem(departments),
+
+    revenue:
+      Math.floor(Math.random() * 900000) +
+      100000,
+  })
+);

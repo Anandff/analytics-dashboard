@@ -2,6 +2,7 @@ import KpiCards from "./KpiCards";
 import SalesChart from "./SalesChart";
 import DataTable from "./DataTable";
 import PieChartComponent from "./PieChartComponent";
+import Notifications from "./Notifications";
 import Footer from "./Footer";
 
 function Dashboard() {
@@ -24,6 +25,7 @@ function Dashboard() {
       <KpiCards />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+        <Notifications />
         <SalesChart />
         <PieChartComponent />
       </div>

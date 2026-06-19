@@ -55,12 +55,13 @@ function KpiCards() {
   const revenue = currentRevenue + amount;
 
   return {
-    ...item,
-    value: `₹${revenue.toLocaleString()}`,
-    trend: amount > 0 ? "up" : "down",
-    changeAmount:
-      amount > 0 ? `+₹${amount}` : `-₹${Math.abs(amount)}`,
-  };
+  ...item,
+  value: `₹${revenue.toLocaleString()}`,
+  change:
+    Math.random() < 0.8
+      ? `+${(Math.random() * 20).toFixed(1)}%`
+      : `-${(Math.random() * 10).toFixed(1)}%`,
+};
 }
 
           // ORDERS
@@ -78,12 +79,13 @@ function KpiCards() {
   const orders = currentOrders + amount;
 
   return {
-    ...item,
-    value: orders.toLocaleString(),
-    trend: amount > 0 ? "up" : "down",
-    changeAmount:
-      amount > 0 ? `+${amount}` : `${amount}`,
-  };
+  ...item,
+  value: orders.toLocaleString(),
+  change:
+    Math.random() < 0.8
+      ? `+${(Math.random() * 20).toFixed(1)}%`
+      : `-${(Math.random() * 10).toFixed(1)}%`,
+};
 }
 
           // GROWTH
@@ -103,9 +105,13 @@ function KpiCards() {
             );
 
             return {
-              ...item,
-              value: `+${growth.toFixed(1)}%`,
-            };
+  ...item,
+  value: `+${growth.toFixed(1)}%`,
+  change:
+    Math.random() < 0.8
+      ? `+${(Math.random() * 20).toFixed(1)}%`
+      : `-${(Math.random() * 10).toFixed(1)}%`,
+};
           }
 
           return item;
@@ -127,6 +133,7 @@ function KpiCards() {
   change={item.change}
   trend={item.trend}
   changeAmount={item.changeAmount}
+  icon={item.icon}
 />
       ))}
     </div>
