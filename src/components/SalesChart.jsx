@@ -11,8 +11,8 @@ import { salesData } from "../data/salesData";
 
 function SalesChart() {
   return (
-    <div className="bg-white p-5 rounded-lg shadow mt-6">
-      <h2 className="text-xl font-bold mb-4">
+    <div className="bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition">
+      <h2 className="text-xl font-bold mb-4 text-white">
         Sales Overview
       </h2>
 

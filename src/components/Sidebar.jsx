@@ -1,30 +1,30 @@
 function Sidebar() {
   return (
-    <div className="w-full md:w-64 min-h-screen bg-slate-900 text-white p-5">
+    <div className="w-64 bg-slate-900 border-r border-slate-800 min-h-screen p-6">
 
-      <h2 className="text-3xl font-bold mb-10">
-        📊 Dashboard
-      </h2>
+      <h1 className="text-white text-2xl font-bold mb-10">
+        📊 Analytics
+      </h1>
 
-      <ul className="space-y-6">
+      <div className="space-y-6 text-slate-300">
 
-        <li className="hover:text-cyan-400 cursor-pointer transition">
-          📈 Analytics
-        </li>
+        <div className="hover:text-white cursor-pointer">
+          📈 Dashboard
+        </div>
 
-        <li className="hover:text-cyan-400 cursor-pointer transition">
-          📋 Reports
-        </li>
-
-        <li className="hover:text-cyan-400 cursor-pointer transition">
+        <div className="hover:text-white cursor-pointer">
           👥 Users
-        </li>
+        </div>
 
-        <li className="hover:text-cyan-400 cursor-pointer transition">
+        <div className="hover:text-white cursor-pointer">
+          📋 Reports
+        </div>
+
+        <div className="hover:text-white cursor-pointer">
           ⚙ Settings
-        </li>
+        </div>
 
-      </ul>
+      </div>
     </div>
   );
 }

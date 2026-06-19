@@ -25,9 +25,9 @@ function DataTable() {
   );
 
   return (
-    <div className="bg-white p-5 rounded-lg shadow mt-6">
+    <div className="bg-slate-800 rounded-2xl p-6 shadow-lg mt-6">
 
-      <h2 className="text-xl font-bold mb-4">
+      <h2 className="text-2xl font-bold mb-6 text-white">
         Employee Revenue
       </h2>
 
@@ -72,10 +72,10 @@ function DataTable() {
 
       </div>
 
-      <table className="w-full">
+      <table className="w-full text-slate-200">
 
         <thead>
-          <tr className="bg-slate-100">
+          <tr className="bg-slate-700">
             <th className="text-left p-2">
               Name
             </th>
@@ -93,8 +93,8 @@ function DataTable() {
         <tbody>
           {filteredData.map((employee) => (
             <tr
-  key={employee.id}
-  className="border-b hover:bg-gray-100"
+ key={employee.id}
+ className="border-b border-slate-700 hover:bg-slate-700"
 >
               <td className="p-2">
                 {employee.name}

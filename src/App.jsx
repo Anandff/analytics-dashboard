@@ -21,7 +21,7 @@ function App() {
     <div className="flex flex-col md:flex-row">
       <Sidebar />
 
-      <div className="flex-1 bg-slate-100 min-h-screen">
+      <div className="flex-1 bg-slate-950 min-h-screen">
         <Navbar />
         <Dashboard />
       </div>

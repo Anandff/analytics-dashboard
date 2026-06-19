@@ -6,17 +6,19 @@ import Footer from "./Footer";
 
 function Dashboard() {
   return (
-    <div className="p-6">
-      <div className="mb-6">
+    <div className="p-8 w-full">
+      <div className="mb-8">
+  <p className="text-slate-400">
+    Dashboard Overview
+  </p>
 
-  <h2 className="text-4xl font-bold">
+  <h2 className="text-5xl font-bold text-white mt-2">
     Welcome Back 👋
   </h2>
 
-  <p className="text-gray-600 mt-2">
-    Monitor your business performance in real time.
+  <p className="text-slate-400 mt-3">
+    Here's what's happening with your business today.
   </p>
-
 </div>
 
       <KpiCards />
