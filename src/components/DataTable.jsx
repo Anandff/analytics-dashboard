@@ -36,13 +36,13 @@ function DataTable() {
         <input
           type="text"
           placeholder="Search Employee"
-          className="border p-2 rounded"
+          className="border border-slate-600 bg-slate-700 text-white p-2 rounded"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
 
         <select
-          className="border p-2 rounded"
+          className="border border-slate-600 bg-slate-700 text-white p-2 rounded"
           value={department}
           onChange={(e) =>
             setDepartment(e.target.value)
@@ -55,7 +55,7 @@ function DataTable() {
         </select>
 
         <select
-          className="border p-2 rounded"
+          className="border border-slate-600 bg-slate-700 text-white p-2 rounded"
           value={sortOrder}
           onChange={(e) =>
             setSortOrder(e.target.value)
@@ -76,15 +76,15 @@ function DataTable() {
 
         <thead>
           <tr className="bg-slate-700">
-            <th className="text-left p-2">
+            <th className="text-left p-2 text-white font-semibold">
               Name
             </th>
 
-            <th className="text-left p-2">
+            <th className="text-left p-2 text-white font-semibold">
               Department
             </th>
 
-            <th className="text-left p-2">
+            <th className="text-left p-2 text-white font-semibold">
               Revenue
             </th>
           </tr>
@@ -96,17 +96,17 @@ function DataTable() {
  key={employee.id}
  className="border-b border-slate-700 hover:bg-slate-700"
 >
-              <td className="p-2">
-                {employee.name}
-              </td>
+              <td className="p-2 text-white">
+  {employee.name}
+</td>
 
-              <td className="p-2">
-                {employee.department}
-              </td>
+<td className="p-2 text-white">
+  {employee.department}
+</td>
 
-              <td className="p-2">
-                ₹{employee.revenue}
-              </td>
+<td className="p-2 text-green-400 font-semibold">
+  ₹{employee.revenue}
+</td>
             </tr>
           ))}
         </tbody>
