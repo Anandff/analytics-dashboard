@@ -1,12 +1,12 @@
 function Sidebar() {
   return (
-    <div className="w-full lg:w-64 text-center lg:text-left bg-slate-900 border-r border-slate-800 min-h-screen p-6">
+    <div className="w-full lg:w-64 text-center lg:text-left bg-slate-900 border-r border-slate-800 p-4">
 
-      <h1 className="text-white text-2xl font-bold mb-10">
+      <h1 className="text-white text-2xl font-bold mb-4">
         📊 Analytics
       </h1>
 
-      <div className="space-y-6 text-slate-300">
+      <div className="space-y-3 text-slate-300">
 
         <div className="hover:text-white cursor-pointer">
           📈 Dashboard
