@@ -71,8 +71,8 @@ function DataTable() {
         </select>
 
       </div>
-
-      <table className="w-full text-slate-200">
+  <div className="overflow-x-auto">
+  <table className="w-full min-w-[700px]">
 
         <thead>
           <tr className="bg-slate-700">
@@ -112,6 +112,7 @@ function DataTable() {
         </tbody>
 
       </table>
+      </div>
     </div>
   );
 }

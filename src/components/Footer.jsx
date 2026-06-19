@@ -2,7 +2,7 @@ function Footer() {
   return (
     <div className="mt-8 border-t border-slate-700 pt-4 text-center">
 
-      <p className="text-slate-400 text-sm">
+      <p className="text-slate-400 text-xs lg:text-sm">
         Analytics Dashboard © 2026
       </p>
 

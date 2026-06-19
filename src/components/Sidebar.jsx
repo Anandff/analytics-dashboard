@@ -1,6 +1,6 @@
 function Sidebar() {
   return (
-    <div className="w-64 bg-slate-900 border-r border-slate-800 min-h-screen p-6">
+    <div className="w-full lg:w-64 text-center lg:text-left bg-slate-900 border-r border-slate-800 min-h-screen p-6">
 
       <h1 className="text-white text-2xl font-bold mb-10">
         📊 Analytics

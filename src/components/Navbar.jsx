@@ -12,10 +12,10 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="bg-slate-900 border-b border-slate-800 px-8 py-5 flex justify-between items-center">
+    <div className="bg-slate-900 border-b border-slate-800 px-4 lg:px-8 py-4 flex flex-col lg:flex-row justify-between items-center gap-4">
 
       <div>
-        <h1 className="text-white text-3xl font-bold">
+        <h1 className="text-white text-2xl lg:text-3xl font-bold">
           Analytics Dashboard
         </h1>
 

@@ -150,8 +150,8 @@ setEvents(randomEvents);
       <div className="h-75 flex justify-center items-center overflow-hidden">
         <Globe
   ref={globeRef}
-  width={500}
-  height={350}
+  width={window.innerWidth < 768 ? 280 : 500}
+height={window.innerWidth < 768 ? 250 : 350}
         animateIn={false}
         onGlobeReady={(globe) => {
   globe.controls().autoRotate = true;
